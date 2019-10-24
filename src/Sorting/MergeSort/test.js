@@ -5,9 +5,7 @@ const expectedResult = require('./expectedResult');
 const mergeSort = require('./index');
 
 describe('MergeSort', () => {
-
     it('should work correctly with a random data sort', () => {
-        console.log(dataset);
         mergeSort(dataset).should.be.eql(expectedResult);
     });
     it('should work correctly with an empty array', () => {
